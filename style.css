@@ -1,0 +1,767 @@
+/* TODO Netflix font */
+:root {
+  --black: #000000;
+  --black-light: #222222;
+  --gray: #303030;
+  --gray-light: #757575;
+  --red: #e50914;
+  --red-dark: #f40612;
+  --blue: #0071eb;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button {
+  border: none;
+}
+
+.main-container {
+  min-height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
+  position: relative;
+}
+
+.hero {
+  height: 747.7px;
+  border-bottom: 8px solid var(--black-light);
+  position: relative;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .3);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .8) 100%);
+  /* fix color */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar {
+  position: absolute;
+  inset: 0;
+  height: 6rem;
+  background-color: transparent;
+}
+
+.navbar-container {
+  max-width: 1920px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding-inline: 3.5rem;
+}
+
+.nfLogo {
+  fill: var(--red);
+  line-height: normal;
+  margin-right: auto;
+}
+
+.language-options {
+  font-size: 1rem;
+  border-radius: 3px;
+  padding: 6px;
+  margin-right: 2rem;
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.language-options:hover {
+  background-color: var(--black-light);
+}
+
+.enter-btn {
+  padding: 7px 17px;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: var(--red);
+  color: var(--white);
+  transition: .3s ease all;
+}
+
+.enter-btn:hover {
+  background-color: var(--red-dark);
+}
+
+.hero-info {
+  position: absolute;
+  inset: 15% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-info h1 {
+  max-width: 800px;
+  font-size: 4rem;
+}
+
+.hero-info h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin-block: 1.5rem;
+}
+
+.hero-info h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  width: 500px;
+  height: 70px;
+  padding-inline: 1rem;
+}
+
+.form button {
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.form button:hover {
+  background-color: var(--red-dark);
+}
+
+/* section device */
+.device {
+  padding: 4rem 3rem;
+  border-bottom: 8px solid var(--black-light);
+}
+
+.device-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.device-info {
+  width: 52%;
+}
+
+.device-info h1 {
+  font-size: 3.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.device-info h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.device-illustration {
+  position: relative;
+  width: 48%;
+  height: 100%;
+}
+
+.device-illustration img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.device-illustration img {
+  position: relative;
+  z-index: 2;
+}
+
+/* FIX video position */
+.device-illustration video {
+  position: absolute;
+  inset: 21% 14%;
+  width: 72%;
+  z-index: 1;
+}
+
+/* section download */
+.download {
+  padding: 4rem 3rem;
+  border-bottom: 8px solid var(--black-light);
+}
+
+.download-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download-illustration {
+  position: relative;
+  width: 48%;
+  height: 100%;
+  margin-left: -10%;
+}
+
+.download-animation {
+  position: absolute;
+  bottom: 7%;
+  left: 16%;
+  width: 67%;
+  height: 6.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  border: 2px solid var(--gray);
+  background-color: var(--black);
+}
+
+.cover .stranger {
+  padding: 0.5rem;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: 0.5rem;
+}
+
+.texts .text1 {
+  color: var(--white);
+}
+
+.texts .text2 {
+  color: var(--blue);
+}
+
+.download-icon {
+  width: 3rem;
+  background-size: 100%;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center no-repeat;
+  background-size: 46px;
+}
+
+.download-info {
+  width: 52%;
+}
+
+.download-info h1 {
+  font-size: 3.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.download-info h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+/* section devices */
+.devices {
+  padding: 4rem 3rem;
+  border-bottom: 8px solid var(--black-light);
+}
+
+.devices-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.devices-info {
+  width: 52%;
+}
+
+.devices-info h1 {
+  font-size: 3.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.devices-info h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.devices-illustration {
+  position: relative;
+  width: 48%;
+  height: 100%;
+}
+
+.devices-illustration img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.devices-illustration img {
+  position: relative;
+  z-index: 2;
+}
+
+.devices-illustration video {
+  position: absolute;
+  inset: 10% 19%;
+  width: 62%;
+  z-index: 1;
+}
+
+/* section profile */
+.profile {
+  padding: 4rem 3rem;
+  border-bottom: 8px solid var(--black-light);
+}
+
+.profile-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.profile-illustration {
+  width: 48%;
+  height: 100%;
+}
+
+.profile img {
+  max-width: 95%;
+  height: auto;
+}
+
+.profile-info {
+  width: 52%;
+}
+
+.profile-info h1 {
+  font-size: 3.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-info h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+/* section faq */
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  border-bottom: 8px solid var(--black-light);
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 800px;
+  width: 75%;
+  margin-block: 4rem;
+}
+
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.faq-toggle {
+  cursor: pointer;
+}
+
+.faq-toggle-icon {
+  font-size: 2rem;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: var(--gray);
+}
+
+.answer {
+  display: none;
+  overflow: hidden;
+  background-color: var(--gray);
+  padding: 1.2rem;
+}
+
+.open {
+  display: block;
+}
+
+/* .answer {
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--gray);
+  padding: 1.2rem;
+  transition: max-height .25s cubic-bezier(.5, 0, .1, 1);
+}
+
+.open {
+  max-height: 800px;
+} */
+
+.faq h1 {
+  font-size: 3.125rem;
+}
+
+.faq h3,
+p {
+  font-size: 1.625rem;
+}
+
+.faq h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  max-width: 800px;
+  width: 70%;
+  margin: auto;
+  padding-block: 2rem;
+  color: var(--gray-light);
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer li {
+  font-size: 0.8rem;
+}
+
+.footer-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.footer-items li {
+  padding: 0.5rem 0.3rem;
+}
+
+.language-selection {
+  margin-block: 1.5rem;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+.footer .netflix {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1450px) {
+
+  .nfLogo,
+  .svg-icon-netflix-logo {
+    width: 10.4rem;
+  }
+
+  .form input {
+    width: 500px;
+    height: 70px;
+  }
+
+  .form button {
+    height: 70px;
+    padding-inline: 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1449px) {
+  .hero {
+    height: 706.9px;
+  }
+
+  .nfLogo,
+  .svg-icon-netflix-logo {
+    width: 8.3rem;
+  }
+
+  .hero-info h1 {
+    max-width: 640px;
+    font-size: 3.1rem;
+  }
+
+  .form input {
+    width: 450px;
+    height: 60px;
+  }
+
+  .form button {
+    height: 60px;
+    padding-inline: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .download-animation {
+    height: 6rem;
+  }
+}
+
+@media (max-width: 950px) {
+
+  .nfLogo,
+  .svg-icon-netflix-logo {
+    width: 6.7rem;
+  }
+
+  .hero-info p {
+    font-size: 1.1rem;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form input {
+    height: 60px;
+  }
+
+  .form button {
+    height: initial;
+    margin-top: 1rem;
+    padding: 12px 18px;
+    font-size: 1rem;
+    border-radius: 3px;
+  }
+
+  /* section device */
+  .device-content {
+    flex-direction: column;
+  }
+
+  .device-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .device-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .device-info h2 {
+    font-size: 1.25rem;
+  }
+
+  .device-illustration {
+    width: 100%;
+  }
+
+  /* section download */
+  .download-content {
+    flex-direction: column;
+  }
+
+  .download-illustration {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 0;
+    order: 2;
+  }
+
+  .download img {
+    max-width: 100%;
+  }
+
+  .download-info {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  .download-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .download-info h2 {
+    font-size: 1.25rem;
+  }
+
+  .download-animation {
+    height: 5rem;
+  }
+
+  /* section devices */
+  .devices-content {
+    flex-direction: column;
+  }
+
+  .devices-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .devices-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .devices-info h2 {
+    font-size: 1.25rem;
+  }
+
+  .devices-illustration {
+    width: 100%;
+  }
+
+  /* section profile */
+  .profile-content {
+    flex-direction: column;
+  }
+
+  .profile-illustration {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 0;
+    order: 2;
+  }
+
+  .profile img {
+    max-width: 100%;
+  }
+
+  .profile-info {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  .profile-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .profile-info h2 {
+    font-size: 1.25rem;
+  }
+
+  .faq-list {
+    width: 90%;
+  }
+
+  .faq h1 {
+    font-size: 2.5rem;
+  }
+
+  .faq h3,
+  p {
+    font-size: 1.25rem;
+  }
+
+  .faq h4 {
+    font-size: 1.4rem;
+    max-width: 450px;
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 550px) {
+  .navbar-container {
+    margin-inline: 5%;
+    padding-inline: 0.1rem;
+  }
+
+  .nfLogo,
+  .svg-icon-netflix-logo {
+    width: 5.7rem;
+  }
+
+  .language-options {
+    margin-right: 1rem;
+    padding: 4px;
+    font-size: .9rem;
+  }
+
+  .enter-btn {
+    padding: 6px 12px;
+    font-size: .9rem;
+  }
+
+  .hero-info h1 {
+    /* max-width: 800px; */
+    font-size: 1.7rem;
+  }
+
+  .hero-info h2 {
+    font-size: 1.1rem;
+    margin-block: 1.5rem;
+  }
+
+  .hero-info p {
+    font-size: 1rem;
+  }
+
+  .form input {
+    width: 100%;
+    height: 48px;
+  }
+
+  .download-animation {
+    width: 100%;
+    left: 0;
+    height: 4rem;
+  }
+
+  .texts .text1 {
+    font-size: 0.9rem;
+  }
+
+
+  .texts .text2 {
+    font-size: 0.75rem;
+  }
+
+
+  .faq h4 {
+    font-size: 1.2rem;
+  }
+}
