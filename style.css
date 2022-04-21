@@ -84,14 +84,24 @@ img {
   margin-right: auto;
 }
 
+.language-selection {
+  position: relative;
+}
+
 .language-options {
   font-size: 1rem;
   border-radius: 3px;
-  padding: 6px;
+  padding: 6px 6px 6px 24px;
   margin-right: 2rem;
   background-color: var(--black);
   color: var(--white);
   cursor: pointer;
+}
+
+.globe-icon {
+  position: absolute;
+  top: 16px;
+  left: 8px;
 }
 
 .language-options:hover {
@@ -717,8 +727,13 @@ p {
 
   .language-options {
     margin-right: 1rem;
-    padding: 4px;
+    padding: 4px 4px 4px 18px;
     font-size: .9rem;
+  }
+
+  .globe-icon {
+    top: 14px;
+    left: 6px;
   }
 
   .enter-btn {
