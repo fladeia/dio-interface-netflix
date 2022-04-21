@@ -5,8 +5,6 @@ const faqToggle = document.querySelectorAll('.faq-toggle')
 const answer = document.querySelectorAll('.answer')
 const elementsLanguageOptions = document.querySelectorAll('h1, h2, h3, h4, p, li, button, a')
 
-console.log(elementsLanguageOptions);
-
 language.addEventListener('change', languageSelect)
 
 function languageSelect() {
@@ -22,41 +20,6 @@ function languageSelect() {
     })
   }
 }
-
-// en.forEach((item, index) => {
-//   // console.log(item)
-// })
-
-// text.map((item, index) => {
-//   console.log(item.innerHTML)
-// })
-
-// function translate() {
-//   const encodedParams = new URLSearchParams();
-//   text.map((item, index) => {
-//     encodedParams.append("q", item.innerHTML);
-//   })
-//   encodedParams.append("target", "pt");
-//   encodedParams.append("source", "en");
-  
-//   const options = {
-//     method: 'POST',
-//     headers: {
-//       'content-type': 'application/x-www-form-urlencoded',
-//       'Accept-Encoding': 'application/gzip',
-//       'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com',
-//       'X-RapidAPI-Key': '8dadb36f79mshd159ab6f71347e0p1b5b37jsndf86cb5fb88f'
-//     },
-//     body: encodedParams
-//   };
-  
-//   fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
-//     .then(response => response.json())
-//     .then(response => console.log(response))
-//     .catch(err => console.error(err));
-// }
-
-// translate()
 
 function showAnswer(opcao) {
   if (!answer[opcao].classList.contains('open')) {
