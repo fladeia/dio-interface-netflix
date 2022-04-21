@@ -3,7 +3,9 @@ import { en, pt } from './language.js'
 const language = document.querySelector('.language-options')
 const faqToggle = document.querySelectorAll('.faq-toggle')
 const answer = document.querySelectorAll('.answer')
-const elementsLanguageOptions = document.querySelectorAll('h1, h2, h3, h4, p, li')
+const elementsLanguageOptions = document.querySelectorAll('h1, h2, h3, h4, p, li, button, a')
+
+console.log(elementsLanguageOptions);
 
 language.addEventListener('change', languageSelect)
 

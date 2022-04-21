@@ -1,7 +1,9 @@
 export const pt = [
+  'Entrar',
   'Filmes, séries e muito mais. Sem limites.',
   'Assista onde quiser. Cancele quando quiser.',
   'Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.',
+  'Vamos lá >',
   'Aproveite na TV.',
   'Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.',
   'Baixe séries para assistir offline.',
@@ -24,6 +26,7 @@ export const pt = [
   'A Netflix é adequada para crianças?',
   'A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos pais. O recurso de controle dos pais, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.',
   'Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.',
+  'Vamos lá >',
   'Dúvidas? Ligue 0800-761-4631',
   'Perguntas frequentes',
   'Centro de ajuda',
@@ -46,9 +49,11 @@ export const pt = [
 ]
 
 export const en = [
+  'Sing in',
   'Unlimited movies, TV shows, and more.',
   'Watch anywhere. Cancel anytime.',
   'Ready to watch? Enter your email to create or restart your membership.',
+  'Get started >',
   'Enjoy on your TV.',
   'Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.',
   'Download your shows to watch offline.',
@@ -56,7 +61,7 @@ export const en = [
   'Watch everywhere.',
   'Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.',
   'Create profiles for kids.',
-  'Send kids on adventures with their favorite characters in a space made just for them—free with your membership.',
+  'Send kids on adventures with their favorite characters in a space made just for them free with your membership.',
   'Frequently Asked Questions',
   'What is Netflix?',
   'Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. Theres always something new to discover and new TV shows and movies are added every week!',
@@ -71,6 +76,7 @@ export const en = [
   'Is Netflix good for kids?',
   'The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space. Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you dont want kids to see.',
   'Ready to watch? Enter your email to create or restart your membership.',
+  'Get started >',
   'Questions? Call 0800-761-4632',
   'FAQ',
   'Help Center',
